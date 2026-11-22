@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ODIN GP1 | Dimas Ari Lumintang</title>
+  <meta name="description" content="ODIN GP1: margin analytics that shows where production cost can improve and turns it into prioritised, AI-assisted actions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var root = document.documentElement, theme = null;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="odin.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c5 0 8.5 4.5 9.5 7a13 13 0 0 1-2.6 3.8M6.6 6.6C4.4 8 3 10.2 2.5 12c1 2.5 4.5 7 9.5 7a9.7 9.7 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="ODIN pages">
+      <a class="back" href="../index.html#projects"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg><span>Portfolio</span></a>
+      <div class="odin-tabs">
+        <a href="index.html">ODIN</a>
+        <a href="gp1.html" aria-current="page">ODIN GP1</a>
+        <a href="control.html">ODIN Control</a>
+        <a href="brain.html">ODIN Brain</a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">ODIN · Module 1 of 3 · Margin analytics</span>
+        <h1>ODIN GP1: turning margin analysis into action</h1>
+        <p class="lead">ODIN GP1 is the margin analytics module. It compares production cost with the plan, shows what drove the difference, and ranks where action will have the most impact. An AI assistant drafts the recommended actions.</p>
+        <dl class="meta">
+          <div><dt>Users</dt><dd>Management, cost owners</dd></div>
+          <div><dt>My role</dt><dd>Lead developer</dd></div>
+          <div><dt>Focus</dt><dd>Production cost and margin</dd></div>
+          <div><dt>AI</dt><dd>Assistant with output checks</dd></div>
+        </dl>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="../image/odin-gp1-matrix-blur.jpg" alt="Blurred ODIN GP1 screen with filters and a cost analysis table" width="1200" height="751">
+            <span class="blur-note"><svg class="icon" aria-hidden="true"><use href="#i-eye-off"/></svg>Blurred: confidential data</span>
+          </div>
+          <figcaption>Cost analysis with filters for period, location and product.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Cost analysis</h2>
+        <p class="intro">One table brings together the plan, the actual result and earlier periods for every cost component, down to the production margin.</p>
+        <div class="grid-2">
+          <div class="card"><h3>Plan versus actual</h3><p>Each cost component is compared with the plan and the previous period, for any date range and down to product level.</p></div>
+          <div class="card"><h3>What drove the gap</h3><p>The difference is broken down into its main drivers, so teams can tell a change in product mix or volume from a change in efficiency.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Prioritised actions</h2>
+        <p class="intro">Below the analysis, a ranked list shows where to act first, with the evidence behind each item.</p>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="../image/odin-gp1-whattodo-blur.jpg" alt="Blurred list of prioritised actions with supporting evidence" width="1200" height="751" loading="lazy">
+            <span class="blur-note"><svg class="icon" aria-hidden="true"><use href="#i-eye-off"/></svg>Blurred: confidential data</span>
+          </div>
+          <figcaption>Each item shows its potential impact, the evidence compared with standards, and the recommended action.</figcaption>
+        </figure>
+        <div class="grid-3">
+          <div class="card"><h3>Ranked by impact</h3><p>Issues are ordered by how much they could improve the margin.</p></div>
+          <div class="card"><h3>Evidence first</h3><p>Production measures are compared with their standards and highlighted when they are off.</p></div>
+          <div class="card"><h3>Clear targets</h3><p>Each action addresses a measured issue and says what to achieve.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>AI assistant</h2>
+        <p class="intro">The assistant helps people work with the analysis. It never changes the numbers.</p>
+        <div class="grid-2">
+          <div class="card"><h3>Draft recommendations</h3><p>Writes recommended actions for each item and reuses earlier results when nothing has changed.</p></div>
+          <div class="card"><h3>Refine in a chat</h3><p>Owners can ask questions or ask for a revision. Accepted feedback is kept and used for later recommendations.</p></div>
+          <div class="card"><h3>Explain the numbers</h3><p>Answers come from the data itself, not from the model's own assumptions.</p></div>
+          <div class="card"><h3>Send to the shop floor</h3><p>Approved actions go to ODIN Control as tasks for the production team.</p></div>
+        </div>
+        <div class="callout" style="margin-top:18px">
+          <h3>Guardrails</h3>
+          <p>Every AI output is checked before it is shown. It may only use figures that exist in the data, must avoid guesses, and must address a measured issue. Output that fails a check is replaced by a rule-based recommendation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Data and my contribution</h2>
+        <div class="role">
+          <div class="card">
+            <h3>Data</h3>
+            <ul class="list">
+              <li>Data comes from the company's reporting models, refreshed every day</li>
+              <li>Each refresh is reconciled with the official report before it is used</li>
+              <li>The app and the assistant read the same data, so the numbers always agree</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <h3>What I built</h3>
+            <p>The cost analysis and its breakdown, the prioritisation logic, the AI assistant and its guardrails, and the daily data pipeline, together with the tests and documentation.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span><span class="tag">LLM</span><span class="tag">Data modeling</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container pager">
+        <a href="index.html"><small>Previous</small><span>ODIN overview</span></a>
+        <a class="next" href="control.html"><small>Next module</small><span>ODIN Control</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span>Dimas Ari Lumintang · Data &amp; BI Analyst</span><a href="../index.html">arilumintang.github.io</a></div>
+  </footer>
+  <script src="odin.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ODIN Control | Dimas Ari Lumintang</title>
+  <meta name="description" content="ODIN Control: a cockpit for the production line with a 3D line view, real-time alerts and clear tasks for production teams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var root = document.documentElement, theme = null;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="odin.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c5 0 8.5 4.5 9.5 7a13 13 0 0 1-2.6 3.8M6.6 6.6C4.4 8 3 10.2 2.5 12c1 2.5 4.5 7 9.5 7a9.7 9.7 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="ODIN pages">
+      <a class="back" href="../index.html#projects"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg><span>Portfolio</span></a>
+      <div class="odin-tabs">
+        <a href="index.html">ODIN</a>
+        <a href="gp1.html">ODIN GP1</a>
+        <a href="control.html" aria-current="page">ODIN Control</a>
+        <a href="brain.html">ODIN Brain</a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">ODIN · Module 2 of 3 · Shop floor</span>
+        <h1>ODIN Control: a cockpit for the production line</h1>
+        <p class="lead">ODIN Control gives production teams one view of every line: its status, its performance against standard, and a 3D view of the line itself. Issues found by an AI agent, including those raised by the margin analysis, arrive as clear tasks.</p>
+        <dl class="meta">
+          <div><dt>Users</dt><dd>Production supervisors, operators</dd></div>
+          <div><dt>My role</dt><dd>Contributor</dd></div>
+          <div><dt>Scope</dt><dd>Lines and machines</dd></div>
+          <div><dt>AI</dt><dd>Operations AI agent</dd></div>
+        </dl>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="../image/odin-control-overview-blur.jpg" alt="Blurred ODIN Control overview with one row per production line" width="1200" height="751">
+            <span class="blur-note"><svg class="icon" aria-hidden="true"><use href="#i-eye-off"/></svg>Blurred: confidential data</span>
+          </div>
+          <figcaption>The line overview, with status, performance and alerts for each line.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Line overview</h2>
+        <p class="intro">One screen answers the first question of every shift: which line needs attention now.</p>
+        <div class="grid-3">
+          <div class="card"><h3>Status and productivity</h3><p>Each line shows whether it is running and how productive it is.</p></div>
+          <div class="card"><h3>Material performance</h3><p>Material efficiency and waste are compared with their standards for any chosen day.</p></div>
+          <div class="card"><h3>Quality checks</h3><p>Product weight checks show at a glance whether output is on target.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Line detail in 3D</h2>
+        <p class="intro">Opening a line shows an interactive 3D model of it, from the first process step to packaging.</p>
+        <figure class="shot">
+          <div class="shot-frame">
+            <img src="../image/odin-control-line3d-blur.jpg" alt="Blurred 3D model of a production line in ODIN Control" width="1200" height="751" loading="lazy">
+            <span class="blur-note"><svg class="icon" aria-hidden="true"><use href="#i-eye-off"/></svg>Blurred: confidential data</span>
+          </div>
+          <figcaption>Machines with an open issue are highlighted in the 3D view.</figcaption>
+        </figure>
+        <div class="grid-3">
+          <div class="card"><h3>Alerts in context</h3><p>An issue lights up on the machine it concerns, and the task list filters to that machine.</p></div>
+          <div class="card"><h3>Clear tasks</h3><p>Each task says what to adjust and the target to reach, in a few words.</p></div>
+          <div class="card"><h3>Safe changes</h3><p>Changes need a confirmation and are limited to authorised roles.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Operations AI agent</h2>
+        <p class="intro">An AI agent watches production data and the issues sent from the margin analysis, and turns them into suggestions for the line.</p>
+        <div class="grid-2">
+          <div class="card"><h3>Reasoning from knowledge</h3><p>The agent uses the plant's process knowledge in ODIN Brain to decide which settings matter, and keeps its suggestions within safe ranges.</p></div>
+          <div class="card"><h3>Real-time notifications</h3><p>New findings appear on screen as they happen, on any page of the platform.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>My part</h2>
+        <div class="role">
+          <div class="card">
+            <h3>Team</h3>
+            <p>ODIN Control was built by the ODIN team. My work connected it to the margin analysis and to the plant's data.</p>
+          </div>
+          <div class="callout">
+            <h3>What I built</h3>
+            <p>The link from ODIN GP1 to the shop floor, so approved actions arrive as tasks on the right line; the material performance and quality views; and consistent task wording across the modules.</p>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">React</span><span class="tag">three.js</span><span class="tag">Real-time events</span><span class="tag">TypeScript</span><span class="tag">LLM agents</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container pager">
+        <a href="gp1.html"><small>Previous</small><span>ODIN GP1</span></a>
+        <a class="next" href="brain.html"><small>Next module</small><span>ODIN Brain</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span>Dimas Ari Lumintang · Data &amp; BI Analyst</span><a href="../index.html">arilumintang.github.io</a></div>
+  </footer>
+  <script src="odin.js"></script>
+</body>
+</html>
